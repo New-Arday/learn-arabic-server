@@ -7,8 +7,9 @@ async function seed() {
     data: {
       lesson: "Fruits and Vegetables",
       image:
-        "https://images.unsplash.com/photo-1488459716781-31db52582fe9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fGZydWl0c3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-      paragraph: "Let's learn about fruits and Veg in Arabic!",
+        "https://images.unsplash.com/photo-1579113800032-c38bd7635818?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fHZlZ2V0YWJsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500",
+      paragraph:
+        "Fruits and vegetables in Arabic, dolor sit amet consectetur adipisicing elit.",
 
       words: {
         create: [
@@ -98,11 +99,11 @@ async function seed() {
     include: { words: true },
   });
 
-  console.log("Lesson  fruitsAndVeg  created", fruitsAndVeg);
   const animals = await prisma.Lesson.create({
     data: {
       lesson: "Animals",
-      paragraph: "Let's learn about Animals objects in Arabic!",
+      paragraph:
+        "Animals in Arabic, dolor sit amet consectetur adipisicing elit.",
       image:
         "https://images.unsplash.com/photo-1629812456605-4a044aa38fbc?crop=entropy&cs=tinysrgb&fm=jpg&ixlib=rb-1.2.1&q=60&raw_url=true&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fGFuaW1hbHN8ZW58MHx8MHx8&auto=format&fit=crop&w=500",
       words: {
@@ -193,13 +194,13 @@ async function seed() {
     include: { words: true },
   });
 
-  console.log("Lesson classroom   created", animals);
   const colours = await prisma.Lesson.create({
     data: {
       lesson: "Colours",
       image:
         "https://images.unsplash.com/photo-1587586062323-836089e60d52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y29sb3Vyc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60",
-      paragraph: "Let's learn about colours in Arabic!",
+      paragraph:
+        "Colours in Arabic, dolor sit amet consectetur adipisicing elit.",
       words: {
         create: [
           {
@@ -283,7 +284,7 @@ async function seed() {
     include: { words: true },
   });
 
-  console.log("Lesson colours   created", colours);
+  
   process.exit(0);
 }
 
